@@ -4,9 +4,9 @@
   --text: #fbfbfe;}  /*  For windows  *//*
 :root{--WindowDraggingFromNewtabButton: drag !important}  /* For linux */
 
-/*  #reload-button, #stop-button{display:none !important}  /*  Removes the reload/stop button  */
+#reload-button, #stop-button{display:none !important}  /*  Removes the reload/stop button  */
 
-/*  #back-button, #forward-button{display: none !important}  /*  Removes the forward/back button  */
+#back-button, #forward-button{display: none !important}  /*  Removes the forward/back button  */
 
 /*  .tab-close-button{display: none !important}  /*  Removes the x-button from the tabs  */
 
@@ -246,3 +246,5 @@ list-style-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-
 #historyTree treechildren::-moz-tree-cell(hover) {
   background-color: var(--tab) !important;
 }
+
+
