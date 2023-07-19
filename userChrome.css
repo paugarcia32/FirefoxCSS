@@ -1,9 +1,7 @@
-:root{
-  --WindowDraggingFromNewtabButton: no-drag;
-  --background: #1c1b22;
-    --tab: #484752;
-    --text: #fbfbfe;
-}  /*  For windows  *//*
+:root{--WindowDraggingFromNewtabButton: no-drag;
+--background: #1c1b22;
+  --tab: #484752;
+  --text: #fbfbfe;}  /*  For windows  *//*
 :root{--WindowDraggingFromNewtabButton: drag !important}  /* For linux */
 
 /*  #reload-button, #stop-button{display:none !important}  /*  Removes the reload/stop button  */
@@ -215,32 +213,18 @@ list-style-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-
 }
 
 
-
-#sidebar-box:hover .sidebar-placesTreechildren::-moz-tree-cell-text{
-  background-color: var(--tab);
-}
-
-#sidebar-panel{
-  background-color: var(--background);
-}
-#sidebar-splitter {
-  display: none !important
-}
-
-#sidebar-header {
-  display: none !important;
-}
-
-#sidebar-search-container{
-  display: none !important;
-}
-
-
+#sidebar-splitter,
+#sidebar-header,
 .hidevscroll-scrollbar {
   display: none !important
 }
 
 
+
+#sidebar-search-container {
+  background-color: var(--background);
+  border-radius: 10px;
+}
 
 
 /* set default namespace to XUL */
@@ -248,25 +232,17 @@ list-style-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-
 #sidebar-search-container,
 #bookmarks-view-children,
 #historyTree {
-  color: #fff !important;
   background-color: var(--background) !important;
-  /* -moz-appearance: none !important; */
   border-color: transparent !important;
 }
 
 #bookmarksPanel,
 #history-panel {
-  color: #fff !important;
   background-color: var(--background) !important;
 }
 
 /* Bookmarks sidebar: change hover color */
-#bookmarks-view treechildren::-moz-tree-cell(hover) {
+#bookmarks-view treechildren::-moz-tree-cell(hover),
+#historyTree treechildren::-moz-tree-cell(hover) {
   background-color: var(--tab) !important;
-}
-
-
-
-.sidebar-placesTreechildren::-moz-tree-cell-text(selected) {
-  color: orange !important;
 }
